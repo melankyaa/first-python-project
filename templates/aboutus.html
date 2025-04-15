@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+body {
+  background: linear-gradient(to top, #ff7e5f, #feb47b);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar section */
+.navbar {
+    background-color: #e6b798 !important;
+    color: black !important;
+}
+.navbar-brand{
+    font-size: 25px !important;
+}
+.nav-item{
+    font-size: 18px !important;
+}
+#about .image-and-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+#about .image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#about .content {
+    flex: 1;
+}
+.image{
+    object-fit: cover;
+}
+#about img {
+    max-width: 100%;
+    height: auto;
+}
+/* footer section */
+.footer {
+    /* height: 400px; */
+    width: 100% !important;
+    font-size: 14px;
+    background-color: #1e1e23;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: white;
+}
+.footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+}
+  </style>
+    <title>Melona⭐ restaurant</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+ <br><br>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <center><h1>About us:</h1></center>
+                <p>Welcome to Melona, where every bite is a journey of flavor! Nestled in the heart of the city, our restaurant is a celebration of fresh ingredients, culinary creativity, and the joy of sharing meals with loved ones. At Melona, we believe that food is more than just sustenance; it’s an experience. We’ve crafted a menu that blends traditional favorites with contemporary twists, using only the finest locally-sourced ingredients.</p>
+            </div>
+
+            <div class="image-and-content">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="">
+                </div>
+                <div class="content">
+                    <h4>melona history started at 2019</h4>
+                    <p>
+                        <h5>interesting facts:</h5>
+                    </p>
+                    <ul>
+                        <li> <h5>Fusion of Flavors:</h5> At Melona, we pride ourselves on our fusion-style menu, which combines elements of Mediterranean, Asian, and Latin American cuisines. It's a celebration of world flavors!
+
+                        </li>
+                        <li><h5>Fresh Ingredients, Locally Sourced:</h5> We are committed to supporting local farmers and suppliers by using fresh, organic ingredients. Every dish on our menu is made with the highest quality, locally sourced produce and meats.
+                        </li>
+                        <li><h5>A Family-Owned Business:</h5> Melona is a family-run restaurant, and our owners are passionate about creating a space that feels like home for both guests and staff. We treat everyone who walks through our doors as part of the family.</li>
+                    </ul>
+                    <p>
+                        Join us at Melona, where food becomes an unforgettable experience.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br>
+    <center><a href="{{ url_for('index') }}"><button type="button" class="btn btn-warning btn-lg btn-block">go to home</button></a></center>
+    <br><br><br>
+
+{% include 'footer.html' %}
+    <!-- footer section end -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
