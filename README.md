@@ -1,2 +1,2 @@
 # first-python-project
-code
+css and js code is in html tags 
